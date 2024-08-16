@@ -5,6 +5,11 @@ build:
   tools:
     python: "3.10"
 
+python:
+  # Install our python package before building the docs
+  install:
+    - requirements: requirements.txt
+
 sphinx:
   configuration: source/conf.py
 
